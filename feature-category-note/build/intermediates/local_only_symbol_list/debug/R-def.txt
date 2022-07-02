@@ -1,2 +1,12 @@
 R_DEF: Internal format may change without notice
 local
+drawable ic_back
+drawable ic_down
+id btn_new_category
+id btn_new_category_note
+id btn_new_sub_category
+id iv_back
+id iv_search
+id iv_type
+layout fragment_category_note
+layout row_category_note

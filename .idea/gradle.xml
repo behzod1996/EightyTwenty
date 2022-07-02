@@ -17,8 +17,10 @@
             <option value="$PROJECT_DIR$/feature-calendar" />
             <option value="$PROJECT_DIR$/feature-category-note" />
             <option value="$PROJECT_DIR$/feature-habit" />
+            <option value="$PROJECT_DIR$/feature-new-note" />
             <option value="$PROJECT_DIR$/feature-note" />
             <option value="$PROJECT_DIR$/feature-onboarding" />
+            <option value="$PROJECT_DIR$/feature-search-note" />
             <option value="$PROJECT_DIR$/feature-task" />
           </set>
         </option>

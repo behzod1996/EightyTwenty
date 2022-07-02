@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import dagger.hilt.android.AndroidEntryPoint
-import fake.`package`.name.`for`.sync.databinding.FragmentCategoryNoteBinding
+import uz.behzoddev.feature_category_note.databinding.FragmentCategoryNoteBinding
 
 @AndroidEntryPoint
 class CategoryNoteFragment: Fragment(){

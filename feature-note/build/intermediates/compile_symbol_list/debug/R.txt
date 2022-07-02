@@ -1,4 +1,3 @@
-int drawable bg_oval 0x0
 int id iv_folder 0x0
 int id tv_desc 0x0
 int id tv_title 0x0
