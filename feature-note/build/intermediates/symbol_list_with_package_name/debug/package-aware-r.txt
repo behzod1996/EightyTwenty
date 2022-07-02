@@ -1,0 +1,8 @@
+uz.behzoddev.feature_dashboard
+drawable bg_oval
+id iv_folder
+id tv_desc
+id tv_title
+id tv_title_category
+layout fragment_note
+layout row_note
