@@ -1,7 +1,7 @@
 # EightyTwenty
 EightyTwenty is life planner application with beautiful user interface.
 
-*** Version 0.0.1
+### Version 0.0.1
 - [ ] Add notes
 - [ ] Add categories
 - [ ] Add notes with image
