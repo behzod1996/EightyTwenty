@@ -5,7 +5,7 @@ object Version {
     const val hiltGradleVersion = "2.38.1"
     const val coreKtxVersion = "1.7.0"
     const val appCompatVersion = "1.1.0-alpha04"
-    const val materialVersion = "1.3.0"
+    const val materialVersion = "1.2.0"
     const val constraintLayoutVersion = "2.1.3"
     const val legacyVersion = "1.0.0"
     const val junitVersion = "4.13.2"

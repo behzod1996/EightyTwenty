@@ -1,0 +1,18 @@
+uz.behzoddev.feature_new_note
+drawable ic_delete
+drawable ic_image
+drawable ic_move_to_inbox
+drawable ic_redo
+drawable ic_undo
+id btn_save_or_cancel
+id delete
+id et_desc
+id et_title
+id image
+id iv_redo
+id iv_undo
+id move
+id tv_date
+layout fragment_new_note
+menu new_note_menu
+string text_save

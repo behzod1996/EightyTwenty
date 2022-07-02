@@ -1,5 +1,0 @@
-C:\Users\Behzod\AndroidStudioProjects\EightyTwenty\feature-category-note\src\main\java\uz\behzoddev\feature_category_note\CategoryNoteFragment.kt
-C:\Users\Behzod\AndroidStudioProjects\EightyTwenty\feature-category-note\src\main\java\uz\behzoddev\feature_category_note\CategoryNoteViewEffect.kt
-C:\Users\Behzod\AndroidStudioProjects\EightyTwenty\feature-category-note\src\main\java\uz\behzoddev\feature_category_note\CategoryNoteViewModel.kt
-C:\Users\Behzod\AndroidStudioProjects\EightyTwenty\feature-category-note\src\main\java\uz\behzoddev\feature_category_note\CategoryNoteNavigator.kt
-C:\Users\Behzod\AndroidStudioProjects\EightyTwenty\feature-category-note\src\main\java\uz\behzoddev\feature_category_note\CategoryNoteEvent.kt

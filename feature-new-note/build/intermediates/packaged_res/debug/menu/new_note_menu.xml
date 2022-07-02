@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/image"
+        android:title="Image"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_image"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/move"
+        android:title="Move"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_move_to_inbox"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="always"
+        />
+
+</menu>
