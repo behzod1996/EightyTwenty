@@ -67,6 +67,10 @@ dependencies {
     implementation(project(":feature-task"))
     implementation(project(":feature-habit"))
     implementation(project(":feature-calendar"))
+    implementation(project(":data-caching"))
+    implementation(project(":feature-category-note"))
+    implementation(project(":feature-search-note"))
+    implementation(project(":feature-new-note"))
     implementation(project(":common-ui"))
 }
 

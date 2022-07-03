@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/common-ui/src/main/res/drawable/bg_oval.xml" value="0.1" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/common-ui/src/main/res/drawable/bg_oval_undo_redo.xml" value="0.1235" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/common-ui/src/main/res/drawable/ic_add.xml" value="0.2065" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/common-ui/src/main/res/drawable/ic_circle_check.xml" value="0.1575" />
@@ -15,7 +16,7 @@
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/common-ui/src/main/res/font/roboto_medium.xml" value="0.24722222222222223" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/feature-category-note/src/main/res/drawable/ic_back.xml" value="0.14" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/feature-category-note/src/main/res/drawable/ic_down.xml" value="0.1895" />
-        <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/feature-category-note/src/main/res/layout/fragment_category_note.xml" value="0.136" />
+        <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/feature-category-note/src/main/res/layout/fragment_category_note.xml" value="0.264" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/feature-category-note/src/main/res/layout/row_category_note.xml" value="0.2" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/feature-new-note/src/main/res/drawable/ic_delete.xml" value="0.1895" />
         <entry key="..\:/Users/Behzod/AndroidStudioProjects/EightyTwenty/feature-new-note/src/main/res/drawable/ic_image.xml" value="0.1895" />

@@ -21,14 +21,18 @@ public final class FragmentNoteBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final View btnNewNote;
+
+  @NonNull
   public final ImageView ivFolder;
 
   @NonNull
   public final TextView tvTitleCategory;
 
-  private FragmentNoteBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView ivFolder,
-      @NonNull TextView tvTitleCategory) {
+  private FragmentNoteBinding(@NonNull ConstraintLayout rootView, @NonNull View btnNewNote,
+      @NonNull ImageView ivFolder, @NonNull TextView tvTitleCategory) {
     this.rootView = rootView;
+    this.btnNewNote = btnNewNote;
     this.ivFolder = ivFolder;
     this.tvTitleCategory = tvTitleCategory;
   }
@@ -60,6 +64,12 @@ public final class FragmentNoteBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_new_note;
+      View btnNewNote = ViewBindings.findChildViewById(rootView, id);
+      if (btnNewNote == null) {
+        break missingId;
+      }
+
       id = R.id.iv_folder;
       ImageView ivFolder = ViewBindings.findChildViewById(rootView, id);
       if (ivFolder == null) {
@@ -72,7 +82,8 @@ public final class FragmentNoteBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentNoteBinding((ConstraintLayout) rootView, ivFolder, tvTitleCategory);
+      return new FragmentNoteBinding((ConstraintLayout) rootView, btnNewNote, ivFolder,
+          tvTitleCategory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

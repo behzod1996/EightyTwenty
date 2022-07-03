@@ -5,9 +5,12 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import dagger.hilt.android.AndroidEntryPoint
+import uz.behzoddev.common_ui.gone
+import uz.behzoddev.common_ui.hide
+import uz.behzoddev.common_ui.show
 import uz.behzoddev.eightytwenty.databinding.ActivityMainBinding
-import uz.behzoddev.feature_onboarding.databinding.ActivityOnboardingBinding
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -30,6 +33,20 @@ class MainActivity : AppCompatActivity() {
         val navController = supportFragmentManager.findFragmentById(R.id.eighty_twenty_nav_host)
         navHost = navController as NavHostFragment?
             ?: return
+
+        NavigationUI.setupWithNavController(binding.bottomNav, navHost.navController)
+
+        navHost.navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.newNoteFragment, R.id.categoryNoteFragment
+                -> {
+                    binding.bottomNav.gone()
+                }
+                else -> {
+                    binding.bottomNav.show()
+                }
+            }
+        }
 
     }
 

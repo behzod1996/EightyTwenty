@@ -49,4 +49,7 @@ dependencies {
 
     hilt()
     hiltKapt()
+
+    navigationUi()
+    navigationFragment()
 }

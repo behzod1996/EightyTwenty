@@ -1,4 +1,5 @@
 uz.behzoddev.feature_dashboard
+id btn_new_note
 id iv_folder
 id tv_desc
 id tv_title
