@@ -15,3 +15,10 @@ fun View.show(): View {
     }
     return this
 }
+
+fun View.gone() : View {
+    if (visibility != View.GONE) {
+        visibility = View.GONE
+    }
+    return this
+}
