@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import dagger.hilt.android.AndroidEntryPoint
+import uz.behzoddev.common_ui.hide
+import uz.behzoddev.common_ui.show
 import uz.behzoddev.feature_category_note.databinding.FragmentCategoryNoteBinding
 
 @AndroidEntryPoint
@@ -25,8 +27,25 @@ class CategoryNoteFragment: Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setupUI()
     }
 
+
+    private fun setupUI() {
+        binding.btnNewCategoryNote.setOnClickListener {
+            binding.btnNewCategory.show()
+            binding.btnNewSubCategory.show()
+            binding.btnNewCategoryNote.hide()
+            binding.btnCancel.show()
+        }
+        binding.btnCancel.setOnClickListener {
+            binding.btnNewCategory.hide()
+            binding.btnNewSubCategory.hide()
+            binding.btnCancel.hide()
+            binding.btnNewCategoryNote.show()
+        }
+    }
     override fun onDestroyView() {
         _binding = null
         super.onDestroyView()
