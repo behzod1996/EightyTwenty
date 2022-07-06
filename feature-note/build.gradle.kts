@@ -59,3 +59,7 @@ dependencies {
 
     implementation(project(":common-ui"))
 }
+
+kapt {
+    correctErrorTypes = true
+}

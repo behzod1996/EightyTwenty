@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,13 +21,16 @@ public final class FragmentCategoryNoteBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FloatingActionButton btnNewCategory;
+  public final MaterialButton btnCancel;
 
   @NonNull
-  public final FloatingActionButton btnNewCategoryNote;
+  public final MaterialButton btnNewCategory;
 
   @NonNull
-  public final FloatingActionButton btnNewSubCategory;
+  public final MaterialButton btnNewCategoryNote;
+
+  @NonNull
+  public final MaterialButton btnNewSubCategory;
 
   @NonNull
   public final ImageView ivBack;
@@ -36,11 +39,11 @@ public final class FragmentCategoryNoteBinding implements ViewBinding {
   public final ImageView ivSearch;
 
   private FragmentCategoryNoteBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton btnNewCategory,
-      @NonNull FloatingActionButton btnNewCategoryNote,
-      @NonNull FloatingActionButton btnNewSubCategory, @NonNull ImageView ivBack,
-      @NonNull ImageView ivSearch) {
+      @NonNull MaterialButton btnCancel, @NonNull MaterialButton btnNewCategory,
+      @NonNull MaterialButton btnNewCategoryNote, @NonNull MaterialButton btnNewSubCategory,
+      @NonNull ImageView ivBack, @NonNull ImageView ivSearch) {
     this.rootView = rootView;
+    this.btnCancel = btnCancel;
     this.btnNewCategory = btnNewCategory;
     this.btnNewCategoryNote = btnNewCategoryNote;
     this.btnNewSubCategory = btnNewSubCategory;
@@ -75,20 +78,26 @@ public final class FragmentCategoryNoteBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_cancel;
+      MaterialButton btnCancel = ViewBindings.findChildViewById(rootView, id);
+      if (btnCancel == null) {
+        break missingId;
+      }
+
       id = R.id.btn_new_category;
-      FloatingActionButton btnNewCategory = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton btnNewCategory = ViewBindings.findChildViewById(rootView, id);
       if (btnNewCategory == null) {
         break missingId;
       }
 
       id = R.id.btn_new_category_note;
-      FloatingActionButton btnNewCategoryNote = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton btnNewCategoryNote = ViewBindings.findChildViewById(rootView, id);
       if (btnNewCategoryNote == null) {
         break missingId;
       }
 
       id = R.id.btn_new_sub_category;
-      FloatingActionButton btnNewSubCategory = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton btnNewSubCategory = ViewBindings.findChildViewById(rootView, id);
       if (btnNewSubCategory == null) {
         break missingId;
       }
@@ -105,7 +114,7 @@ public final class FragmentCategoryNoteBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCategoryNoteBinding((ConstraintLayout) rootView, btnNewCategory,
+      return new FragmentCategoryNoteBinding((ConstraintLayout) rootView, btnCancel, btnNewCategory,
           btnNewCategoryNote, btnNewSubCategory, ivBack, ivSearch);
     }
     String missingId = rootView.getResources().getResourceName(id);

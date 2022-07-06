@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NoteFragment"
+    >
 
     <ImageView
         android:id="@+id/iv_folder"
@@ -37,7 +39,7 @@
         android:textSize="18sp"
         android:textColor="@color/kashmir_blue"
         android:layout_marginStart="16dp"
-        tools:text="Несортированные"
+        android:text="Несортированные"
         />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -49,15 +51,16 @@
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_new_note"
         android:layout_width="82dp"
         android:layout_height="56dp"
-        android:background="@drawable/bg_oval"
-        app:cardCornerRadius="16dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_oval"
+        android:contentDescription="@string/fab_transformation_scrim_behavior"
         android:src="@drawable/ic_add"
+        app:cardCornerRadius="16dp"
         app:fabSize="auto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

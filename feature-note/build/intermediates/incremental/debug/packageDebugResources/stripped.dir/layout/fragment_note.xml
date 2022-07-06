@@ -50,14 +50,16 @@
         app:layout_constraintTop_toBottomOf="@id/tv_title_category"
         />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="82dp"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_oval"
-        app:cardCornerRadius="16dp"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_new_note"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        app:cornerRadius="360dp"
+        android:backgroundTint="@color/sun_glow"
         android:layout_marginBottom="15dp"
-        android:src="@drawable/ic_add"
-        app:fabSize="auto"
+        app:icon="@drawable/ic_add"
+        android:paddingTop="4dp"
+        app:iconGravity="top"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

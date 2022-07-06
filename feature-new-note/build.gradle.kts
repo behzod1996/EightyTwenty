@@ -48,7 +48,6 @@ dependencies {
 
     hilt()
     hiltKapt()
-    viewPager2()
 
     coroutineAndroid()
     coroutineCore()
@@ -59,4 +58,8 @@ dependencies {
     fragmentKtx()
 
     implementation(project(":common-ui"))
+}
+
+kapt {
+    correctErrorTypes = true
 }

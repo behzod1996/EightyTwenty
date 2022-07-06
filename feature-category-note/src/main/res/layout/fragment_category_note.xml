@@ -34,44 +34,69 @@
         tools:listitem="@layout/row_category_note"
         app:layout_constraintTop_toBottomOf="@id/iv_back"
         />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_new_category_note"
-        android:layout_width="82dp"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_oval"
-        app:cardCornerRadius="16dp"
-        android:layout_marginBottom="15dp"
-        android:src="@drawable/ic_add"
-        app:fabSize="auto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_new_category_note"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/sun_glow"
+        android:paddingTop="4dp"
+        app:cornerRadius="360dp"
+        app:icon="@drawable/ic_add"
+        app:iconGravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_new_sub_category"
-        android:layout_width="82dp"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_oval"
-        android:src="@drawable/ic_folder"
-        app:cardCornerRadius="16dp"
-        app:fabSize="auto"
-        android:layout_marginEnd="12dp"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/sun_glow"
+        android:paddingTop="4dp"
+        app:cornerRadius="360dp"
+        app:icon="@drawable/ic_folder"
+        app:iconGravity="top"
+        android:visibility="invisible"
+        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_new_category_note"
         app:layout_constraintEnd_toStartOf="@+id/btn_new_category_note"
-        app:layout_constraintTop_toTopOf="@+id/btn_new_category_note" />
+        app:layout_constraintTop_toTopOf="@+id/btn_new_category_note"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_new_category"
-        android:layout_width="82dp"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_oval"
-        android:src="@drawable/ic_folder"
-        app:cardCornerRadius="16dp"
-        app:fabSize="auto"
-        android:layout_marginStart="12dp"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/sun_glow"
+        android:paddingTop="4dp"
+        app:cornerRadius="360dp"
+        android:layout_marginStart="10dp"
+        app:icon="@drawable/ic_folder"
+        app:iconGravity="top"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/btn_new_category_note"
         app:layout_constraintStart_toEndOf="@+id/btn_new_category_note"
-        app:layout_constraintTop_toTopOf="@+id/btn_new_category_note" />
+        app:layout_constraintTop_toTopOf="@+id/btn_new_category_note"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        app:cornerRadius="360dp"
+        android:backgroundTint="@color/sun_glow"
+        android:layout_marginBottom="20dp"
+        app:icon="@drawable/ic_cancel"
+        android:paddingTop="4dp"
+        app:iconGravity="top"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

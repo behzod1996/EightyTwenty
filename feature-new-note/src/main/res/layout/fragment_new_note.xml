@@ -2,7 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_save_or_cancel"
@@ -52,6 +54,7 @@
         android:fontFamily="@font/roboto"
         android:hint="Заголовок"
         android:textSize="25sp"
+        android:background="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/btn_save_or_cancel" />
 
     <TextView
@@ -75,11 +78,12 @@
         android:gravity="top"
         android:hint="Заметка"
         android:textSize="20sp"
+        android:background="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/tv_date" />
 
    <LinearLayout
        android:layout_width="match_parent"
-       android:layout_height="56dp"
+       android:layout_height="60dp"
        android:orientation="horizontal"
        android:elevation="16dp"
        android:weightSum="3"
@@ -117,6 +121,7 @@
 
 
    </LinearLayout>
+
 
 
 

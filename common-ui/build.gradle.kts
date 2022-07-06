@@ -53,3 +53,7 @@ dependencies {
     navigationUi()
     navigationFragment()
 }
+
+kapt {
+    correctErrorTypes = true
+}

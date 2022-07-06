@@ -7,5 +7,20 @@
     <fragment
         android:id="@+id/noteFragment2"
         android:name="uz.behzoddev.feature_dashboard.NoteFragment"
-        android:label="NoteFragment" />
+        android:label="NoteFragment" >
+        <action
+            android:id="@+id/action_noteFragment2_to_categoryNoteFragment"
+            app:destination="@id/categoryNoteFragment" />
+        <action
+            android:id="@+id/action_noteFragment2_to_newNoteFragment"
+            app:destination="@id/newNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newNoteFragment"
+        android:name="uz.behzoddev.feature_new_note.NewNoteFragment"
+        android:label="NewNoteFragment" />
+    <fragment
+        android:id="@+id/categoryNoteFragment"
+        android:name="uz.behzoddev.feature_category_note.CategoryNoteFragment"
+        android:label="CategoryNoteFragment" />
 </navigation>

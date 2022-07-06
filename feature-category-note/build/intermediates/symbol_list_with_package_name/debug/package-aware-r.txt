@@ -1,6 +1,8 @@
 uz.behzoddev.feature_category_note
 drawable ic_back
+drawable ic_cancel
 drawable ic_down
+id btn_cancel
 id btn_new_category
 id btn_new_category_note
 id btn_new_sub_category
