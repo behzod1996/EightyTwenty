@@ -71,7 +71,7 @@ dependencies {
     implementation(project(":feature-category-note"))
     implementation(project(":feature-search-note"))
     implementation(project(":feature-new-note"))
-    implementation(project(":common-ui"))
+    implementation(project(":core-ui"))
 }
 
 kapt {

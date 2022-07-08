@@ -56,8 +56,7 @@ dependencies {
     lifecycleRuntime()
     lifecycleViewModel()
     fragmentKtx()
-
-    implementation(project(":common-ui"))
+    implementation(project(":core-ui"))
 }
 
 kapt {

@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "EightyTwenty"
 include (":app")
-include (":common-ui")
+include (":core-ui")
 include (":feature-onboarding")
 include (":feature-note")
 include (":feature-task")
