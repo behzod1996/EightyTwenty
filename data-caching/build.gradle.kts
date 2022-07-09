@@ -53,6 +53,7 @@ dependencies {
     coroutineAndroid()
     coroutineCore()
 
+    implementation(project(":core-data"))
 }
 
 kapt {
