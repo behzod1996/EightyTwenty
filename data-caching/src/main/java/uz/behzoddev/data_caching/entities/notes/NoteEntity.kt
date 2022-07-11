@@ -20,8 +20,8 @@ data class NoteEntity(
     val description: String = String.Empty,
     @ColumnInfo(name = "note_timestamp")
     val timestamp: ZonedDateTime = ZonedDateTime.now(),
-    @ColumnInfo(name = "note_is_deleted")
-    val isDeleted: Boolean = false,
+    @ColumnInfo(name = "note_is_trashed")
+    val isTrashed: Boolean = false,
     @ColumnInfo(name = "note_category_id")
     val categoryId: Long = Long.Empty
 ): Parcelable
