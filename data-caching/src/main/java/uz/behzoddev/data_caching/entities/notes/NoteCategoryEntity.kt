@@ -19,6 +19,6 @@ data class NoteCategoryEntity(
     val id: Long = Long.Empty,
     @ColumnInfo(name = "note_category_name")
     val name: String = String.Empty,
-    @ColumnInfo(name = "note_category_count")
+    @ColumnInfo(name = "note_count")
     val count: Int = Int.Empty
 ): Parcelable
