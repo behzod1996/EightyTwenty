@@ -3,6 +3,7 @@ package uz.behzoddev.data_caching.entities.notes
 import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.example.core_data.Empty
 import kotlinx.parcelize.Parcelize
 import java.time.ZonedDateTime
@@ -12,6 +13,7 @@ import java.time.ZonedDateTime
 )
 @Parcelize
 data class NoteEntity(
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "note_id")
     val id: Long = Long.Empty,
     @ColumnInfo(name = "note_title")
