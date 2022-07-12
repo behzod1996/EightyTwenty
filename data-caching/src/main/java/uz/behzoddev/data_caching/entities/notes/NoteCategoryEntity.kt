@@ -11,7 +11,7 @@ import kotlinx.parcelize.Parcelize
 
 @Entity(
     tableName = "note_category_table",
-    indices = [Index(value = ["name"], unique = true)]
+    indices = [Index(value = ["note_category_name"], unique = true)]
 )
 @Parcelize
 data class NoteCategoryEntity(
