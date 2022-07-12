@@ -8,7 +8,7 @@ interface LocalDataSource {
 
     suspend fun insertNoteCategory(noteCategory: NoteCategoryEntity): Long
 
-    suspend fun updateNoteCategory(noteCategory: NoteCategoryEntity): Long
+    suspend fun updateNoteCategory(noteCategory: NoteCategoryEntity)
 
     suspend fun incrementNoteCount(noteCategoryId: Long)
 
@@ -20,9 +20,9 @@ interface LocalDataSource {
 
     suspend fun insertNote(note: NoteEntity): Long
 
-    suspend fun updateNote(note: NoteEntity): Long
+    suspend fun updateNote(note: NoteEntity)
 
-    suspend fun delete(note: NoteEntity): Long
+    suspend fun delete(note: NoteEntity)
 
     fun fetchTrashedNotes(): Flow<List<NoteEntity>>
 

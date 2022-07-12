@@ -16,7 +16,7 @@ class LocalDataSourceImpl @Inject constructor(
         return noteCategoryDao.insertNoteCategory(noteCategory = noteCategory)
     }
 
-    override suspend fun updateNoteCategory(noteCategory: NoteCategoryEntity): Long {
+    override suspend fun updateNoteCategory(noteCategory: NoteCategoryEntity) {
         return noteCategoryDao.updateNoteCategory(noteCategory = noteCategory)
     }
 
@@ -40,11 +40,11 @@ class LocalDataSourceImpl @Inject constructor(
         return noteDao.insertNote(note = note)
     }
 
-    override suspend fun updateNote(note: NoteEntity): Long {
+    override suspend fun updateNote(note: NoteEntity) {
         return noteDao.updateNote(note = note)
     }
 
-    override suspend fun delete(note: NoteEntity): Long {
+    override suspend fun delete(note: NoteEntity) {
         return noteDao.delete(note = note)
     }
 
