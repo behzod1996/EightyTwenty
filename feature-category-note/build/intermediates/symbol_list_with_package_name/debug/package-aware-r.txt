@@ -2,6 +2,7 @@ uz.behzoddev.feature_category_note
 drawable ic_back
 drawable ic_cancel
 drawable ic_down
+id all_notes_category
 id btn_cancel
 id btn_new_category
 id btn_new_category_note
@@ -9,5 +10,6 @@ id btn_new_sub_category
 id iv_back
 id iv_search
 id iv_type
+id rv_note_categories
 layout fragment_category_note
 layout row_category_note

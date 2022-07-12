@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/core-data" />
             <option value="$PROJECT_DIR$/core-ui" />
             <option value="$PROJECT_DIR$/data-caching" />
+            <option value="$PROJECT_DIR$/domain" />
             <option value="$PROJECT_DIR$/feature-calendar" />
             <option value="$PROJECT_DIR$/feature-category-note" />
             <option value="$PROJECT_DIR$/feature-habit" />

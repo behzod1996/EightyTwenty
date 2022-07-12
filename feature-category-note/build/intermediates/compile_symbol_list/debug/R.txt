@@ -1,6 +1,7 @@
 int drawable ic_back 0x0
 int drawable ic_cancel 0x0
 int drawable ic_down 0x0
+int id all_notes_category 0x0
 int id btn_cancel 0x0
 int id btn_new_category 0x0
 int id btn_new_category_note 0x0
@@ -8,5 +9,6 @@ int id btn_new_sub_category 0x0
 int id iv_back 0x0
 int id iv_search 0x0
 int id iv_type 0x0
+int id rv_note_categories 0x0
 int layout fragment_category_note 0x0
 int layout row_category_note 0x0

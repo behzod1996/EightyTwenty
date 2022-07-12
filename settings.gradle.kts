@@ -25,3 +25,5 @@ include (":feature-search-note")
 include (":feature-new-note")
 include (":feature-category-note")
 include (":data-caching")
+
+include (":domain")

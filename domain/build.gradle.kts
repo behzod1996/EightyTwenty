@@ -1,9 +1,7 @@
 plugins {
     id ("com.android.library")
     id ("org.jetbrains.kotlin.android")
-    kotlin("kapt")
     id("kotlin-parcelize")
-    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -45,18 +43,8 @@ dependencies {
     junit()
     junitTest()
 
-    room()
-    
-    hilt()
-    hiltKapt()
-
     coroutineAndroid()
     coroutineCore()
 
-    implementation(project(":core-data"))
-    implementation(project(":domain"))
 }
 
-kapt {
-    correctErrorTypes = true
-}
