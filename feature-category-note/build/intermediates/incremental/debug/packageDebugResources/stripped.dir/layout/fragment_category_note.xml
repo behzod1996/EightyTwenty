@@ -27,12 +27,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <include
+        android:id="@+id/all_notes_category"
+        layout="@layout/row_category_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_note_categories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        tools:itemCount="5"
         tools:listitem="@layout/row_category_note"
-        app:layout_constraintTop_toBottomOf="@id/iv_back"
+        app:layout_constraintTop_toBottomOf="@id/all_notes_category"
         />
 
     <com.google.android.material.button.MaterialButton
