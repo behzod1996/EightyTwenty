@@ -1,9 +1,8 @@
 package uz.behzoddev.data_caching.db
 
 import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
+import androidx.room.*
+import uz.behzoddev.data_caching.converter.ZoneDateTimeConverter
 import uz.behzoddev.data_caching.dao.NoteCategoryDao
 import uz.behzoddev.data_caching.dao.NoteDao
 import uz.behzoddev.data_caching.entities.notes.NoteCategoryEntity
@@ -12,6 +11,9 @@ import uz.behzoddev.data_caching.entities.notes.NoteEntity
 @Database(
     entities = [NoteCategoryEntity::class,NoteEntity::class],
     version = 1
+)
+@TypeConverters(
+    ZoneDateTimeConverter::class
 )
 abstract class EightyTwentyDatabase : RoomDatabase() {
 
