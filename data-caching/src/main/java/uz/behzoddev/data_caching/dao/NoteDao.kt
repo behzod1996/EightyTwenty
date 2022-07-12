@@ -11,10 +11,10 @@ interface NoteDao {
     suspend fun insertNote(note: NoteEntity): Long
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun updateNote(note: NoteEntity): Long
+    suspend fun updateNote(note: NoteEntity)
 
     @Delete
-    suspend fun delete(note: NoteEntity): Long
+    suspend fun delete(note: NoteEntity)
 
     @Transaction
     @Query("SELECT * FROM note_table WHERE note_is_trashed = 1")
