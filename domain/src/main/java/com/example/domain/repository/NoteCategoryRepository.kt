@@ -1,5 +1,6 @@
 package com.example.domain.repository
 
+import com.example.core_data.Resource
 import com.example.domain.models.NoteCategoryDomainModel
 import kotlinx.coroutines.flow.Flow
 
@@ -12,7 +13,7 @@ interface NoteCategoryRepository {
 
     suspend fun decrementNoteCount(noteCategoryId: Long)
 
-    fun fetchAllCategories(): Flow<List<NoteCategoryDomainModel>>
+    fun fetchAllCategories(): Flow<Resource<List<NoteCategoryDomainModel>>>
 
     suspend fun fetchIfCategoryIdExists(id: Int): Boolean
 
