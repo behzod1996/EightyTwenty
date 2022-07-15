@@ -1,5 +1,6 @@
 package com.example.domain.repository
 
+import com.example.core_data.Resource
 import com.example.domain.models.NoteDomainModel
 import kotlinx.coroutines.flow.Flow
 
@@ -10,7 +11,7 @@ interface NoteRepository {
 
     suspend fun delete(note: NoteDomainModel)
 
-    fun fetchTrashedNotes(): Flow<List<NoteDomainModel>>
+    fun fetchTrashedNotes(): Flow<Resource<List<NoteDomainModel>>>
 
-    fun fetchAllNotes(): Flow<List<NoteDomainModel>>
+    fun fetchAllNotes(): Flow<Resource<List<NoteDomainModel>>>
 }
