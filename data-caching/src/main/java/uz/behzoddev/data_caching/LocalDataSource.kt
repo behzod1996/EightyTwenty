@@ -14,7 +14,7 @@ interface LocalDataSource {
 
     suspend fun decrementNoteCount(noteCategoryId: Long)
 
-    fun fetchAllCategories(): Flow<List<NoteCategoryEntity>>
+    suspend fun fetchAllCategories(): List<NoteCategoryEntity>
 
     suspend fun fetchIfCategoryIdExists(id: Int): Boolean
 
@@ -24,9 +24,9 @@ interface LocalDataSource {
 
     suspend fun delete(note: NoteEntity)
 
-    fun fetchTrashedNotes(): Flow<List<NoteEntity>>
+    suspend fun fetchTrashedNotes(): List<NoteEntity>
 
-    fun fetchAllNotes(): Flow<List<NoteEntity>>
+    suspend fun fetchAllNotes(): List<NoteEntity>
 
 
 }

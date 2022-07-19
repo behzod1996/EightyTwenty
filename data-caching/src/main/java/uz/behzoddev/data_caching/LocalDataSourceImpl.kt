@@ -28,7 +28,7 @@ class LocalDataSourceImpl @Inject constructor(
        return noteCategoryDao.decrementNoteCount(noteCategoryId = noteCategoryId)
     }
 
-    override fun fetchAllCategories(): Flow<List<NoteCategoryEntity>> {
+    override suspend fun fetchAllCategories(): List<NoteCategoryEntity> {
         return noteCategoryDao.fetchAllCategories()
     }
 
@@ -48,11 +48,11 @@ class LocalDataSourceImpl @Inject constructor(
         return noteDao.delete(note = note)
     }
 
-    override fun fetchTrashedNotes(): Flow<List<NoteEntity>> {
+    override suspend fun fetchTrashedNotes(): List<NoteEntity> {
         return noteDao.fetchTrashedNotes()
     }
 
-    override fun fetchAllNotes(): Flow<List<NoteEntity>> {
+    override suspend fun fetchAllNotes(): List<NoteEntity> {
         return noteDao.fetchAllNotes()
     }
 }
