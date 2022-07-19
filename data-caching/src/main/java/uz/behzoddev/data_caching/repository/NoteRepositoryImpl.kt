@@ -1,18 +1,21 @@
 package uz.behzoddev.data_caching.repository
 
+import com.example.core_data.DispatcherProvider
 import com.example.core_data.Resource
 import com.example.core_data.execute
 import com.example.domain.models.NoteDomainModel
 import com.example.domain.repository.NoteRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 import uz.behzoddev.data_caching.LocalDataSource
 import uz.behzoddev.data_caching.mapper.NoteMapper
 import javax.inject.Inject
 
 class NoteRepositoryImpl @Inject constructor(
     private val source: LocalDataSource,
-    private val noteMapper: NoteMapper
+    private val noteMapper: NoteMapper,
+    private val dispatcher: DispatcherProvider
 ) : NoteRepository {
 
     override suspend fun insertNote(note: NoteDomainModel): Long {
@@ -47,7 +50,7 @@ class NoteRepositoryImpl @Inject constructor(
                     emit(Resource.Success(data = result.data!!))
                 }
             }
-        }
+        }.flowOn(dispatcher.io)
     }
 
     override fun fetchAllNotes(): Flow<Resource<List<NoteDomainModel>>> {
@@ -70,6 +73,6 @@ class NoteRepositoryImpl @Inject constructor(
                     emit(Resource.Success(data = result.data!!))
                 }
             }
-        }
+        }.flowOn(dispatcher.io)
     }
 }
