@@ -6,6 +6,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import uz.behzoddev.data_caching.mapper.NoteCategoryMapper
 import uz.behzoddev.data_caching.mapper.NoteMapper
+import uz.behzoddev.data_caching.mapper.NotesMapper
 import javax.inject.Singleton
 
 @Module
@@ -22,5 +23,13 @@ object MapperModule {
     @Singleton
     fun providesNoteCategoryMapper(): NoteCategoryMapper {
         return NoteCategoryMapper.create()
+    }
+
+    @Provides
+    @Singleton
+    fun providesNotesMapper(
+        noteMapper: NoteMapper
+    ): NotesMapper {
+        return NotesMapper(noteMapper)
     }
 }
