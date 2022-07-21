@@ -1,4 +1,4 @@
-package uz.behzoddev.common_ui
+package uz.behzoddev.common_ui.extensions
 
 import android.app.Activity
 import android.content.Intent

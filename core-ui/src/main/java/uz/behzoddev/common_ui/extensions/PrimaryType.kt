@@ -1,4 +1,4 @@
-package uz.behzoddev.common_ui
+package uz.behzoddev.common_ui.extensions
 
 val String.Companion.Empty: String
     get() = ""
