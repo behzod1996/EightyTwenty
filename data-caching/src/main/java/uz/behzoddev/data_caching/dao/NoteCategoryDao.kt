@@ -8,10 +8,13 @@ import uz.behzoddev.data_caching.entities.notes.NoteCategoryEntity
 interface NoteCategoryDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertNoteCategory(noteCategory: NoteCategoryEntity): Long
+    suspend fun insertNoteCategory(noteCategory: NoteCategoryEntity)
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateNoteCategory(noteCategory: NoteCategoryEntity)
+
+    @Delete
+    suspend fun deleteNoteCategory(noteCategory: NoteCategoryEntity)
 
     @Query("UPDATE note_category_table SET note_count = note_count + 1 WHERE id = :noteCategoryId")
     suspend fun incrementNoteCount(noteCategoryId: Long)
