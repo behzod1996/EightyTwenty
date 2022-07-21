@@ -4,8 +4,7 @@ import com.example.core_data.DispatcherProvider
 import com.example.core_data.Resource
 import com.example.core_data.execute
 import com.example.domain.models.NoteCategoryDomainModel
-import com.example.domain.repository.NoteCategoryRepository
-import kotlinx.coroutines.Dispatchers
+import com.example.domain.repositories.NoteCategoryRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
@@ -19,12 +18,16 @@ class NoteCategoryRepositoryImpl @Inject constructor(
     private val dispatcher: DispatcherProvider
 ) : NoteCategoryRepository {
 
-    override suspend fun insertNoteCategory(noteCategory: NoteCategoryDomainModel): Long {
+    override suspend fun insertNoteCategory(noteCategory: NoteCategoryDomainModel) {
         return source.insertNoteCategory(mapper.toEntity(domain = noteCategory))
     }
 
     override suspend fun updateNoteCategory(noteCategory: NoteCategoryDomainModel) {
         return source.updateNoteCategory(mapper.toEntity(domain = noteCategory))
+    }
+
+    override suspend fun deleteNoteCategory(noteCategory: NoteCategoryDomainModel) {
+        return source.deleteNoteCategory(mapper.toEntity(domain = noteCategory))
     }
 
     override suspend fun incrementNoteCount(noteCategoryId: Long) {
