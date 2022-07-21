@@ -7,9 +7,8 @@ import android.view.WindowManager
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import dagger.hilt.android.AndroidEntryPoint
-import uz.behzoddev.common_ui.gone
-import uz.behzoddev.common_ui.hide
-import uz.behzoddev.common_ui.show
+import uz.behzoddev.common_ui.extensions.gone
+import uz.behzoddev.common_ui.extensions.show
 import uz.behzoddev.eightytwenty.databinding.ActivityMainBinding
 
 @AndroidEntryPoint
