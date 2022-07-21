@@ -12,12 +12,16 @@ class LocalDataSourceImpl @Inject constructor(
     private val noteDao: NoteDao
 ) : LocalDataSource {
 
-    override suspend fun insertNoteCategory(noteCategory: NoteCategoryEntity): Long {
+    override suspend fun insertNoteCategory(noteCategory: NoteCategoryEntity) {
         return noteCategoryDao.insertNoteCategory(noteCategory = noteCategory)
     }
 
     override suspend fun updateNoteCategory(noteCategory: NoteCategoryEntity) {
         return noteCategoryDao.updateNoteCategory(noteCategory = noteCategory)
+    }
+
+    override suspend fun deleteNoteCategory(noteCategory: NoteCategoryEntity) {
+        return noteCategoryDao.deleteNoteCategory(noteCategory = noteCategory)
     }
 
     override suspend fun incrementNoteCount(noteCategoryId: Long) {
@@ -36,7 +40,7 @@ class LocalDataSourceImpl @Inject constructor(
         return noteCategoryDao.fetchIfCategoryIdExists(id)
     }
 
-    override suspend fun insertNote(note: NoteEntity): Long {
+    override suspend fun insertNote(note: NoteEntity) {
         return noteDao.insertNote(note = note)
     }
 
