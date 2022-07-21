@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import dagger.hilt.android.AndroidEntryPoint
-import uz.behzoddev.common_ui.hide
-import uz.behzoddev.common_ui.show
+import uz.behzoddev.common_ui.extensions.hide
+import uz.behzoddev.common_ui.extensions.show
 import uz.behzoddev.feature_category_note.databinding.FragmentCategoryNoteBinding
 
 @AndroidEntryPoint

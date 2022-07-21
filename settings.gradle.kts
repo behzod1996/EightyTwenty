@@ -14,6 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "EightyTwenty"
 include (":app")
+include (":core-common")
 include (":core-ui")
 include (":core-data")
 include (":feature-onboarding")

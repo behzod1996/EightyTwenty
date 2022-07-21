@@ -49,7 +49,10 @@ dependencies {
     hilt()
     hiltKapt()
 
+    coroutineCore()
+    coroutineAndroid()
 
+    implementation(project(":core-common"))
 }
 
 kapt {

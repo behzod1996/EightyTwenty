@@ -2,6 +2,8 @@ plugins {
     id ("com.android.library")
     id ("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -46,5 +48,9 @@ dependencies {
     coroutineAndroid()
     coroutineCore()
 
+    hilt()
+    hiltKapt()
+
+    implementation(project(":core-data"))
 }
 

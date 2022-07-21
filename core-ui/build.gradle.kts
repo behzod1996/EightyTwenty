@@ -52,6 +52,8 @@ dependencies {
 
     navigationUi()
     navigationFragment()
+
+    implementation(project(":core-common"))
 }
 
 kapt {

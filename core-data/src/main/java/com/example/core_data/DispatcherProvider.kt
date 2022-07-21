@@ -1,5 +1,6 @@
 package com.example.core_data
 
+import com.example.core_common.Provider
 import kotlinx.coroutines.CoroutineDispatcher
 
 interface DispatcherProvider : Provider {
