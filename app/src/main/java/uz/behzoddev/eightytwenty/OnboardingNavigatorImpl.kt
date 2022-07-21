@@ -1,7 +1,7 @@
 package uz.behzoddev.eightytwenty
 
 import android.app.Activity
-import uz.behzoddev.common_ui.startAndFinish
+import uz.behzoddev.common_ui.extensions.startAndFinish
 import uz.behzoddev.feature_onboarding.OnboardingNavigator
 import javax.inject.Inject
 

@@ -1,7 +1,6 @@
 package uz.behzoddev.feature_onboarding
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.Window
 import android.view.WindowManager
 import androidx.activity.viewModels
@@ -11,8 +10,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import uz.behzoddev.common_ui.hide
-import uz.behzoddev.common_ui.show
+import uz.behzoddev.common_ui.extensions.hide
+import uz.behzoddev.common_ui.extensions.show
 import uz.behzoddev.feature_onboarding.databinding.ActivityOnboardingBinding
 import javax.inject.Inject
 

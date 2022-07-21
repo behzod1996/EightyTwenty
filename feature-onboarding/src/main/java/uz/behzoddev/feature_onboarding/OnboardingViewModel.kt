@@ -6,7 +6,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.launch
-import uz.behzoddev.common_ui.StringProvider
+import uz.behzoddev.common_ui.providers.StringProvider
 import javax.inject.Inject
 
 @HiltViewModel
