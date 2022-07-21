@@ -1,9 +1,9 @@
-package uz.behzoddev.common_ui
+package uz.behzoddev.common_ui.providers
 
 import android.content.Context
 import androidx.annotation.StringRes
+import com.example.core_common.Provider
 import dagger.hilt.android.qualifiers.ApplicationContext
-import uz.behzoddev.common_ui.core.Provider
 import javax.inject.Inject
 
 interface StringProvider : Provider {
