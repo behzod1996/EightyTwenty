@@ -6,9 +6,13 @@ import uz.behzoddev.data_caching.entities.notes.NoteEntity
 
 interface LocalDataSource {
 
-    suspend fun insertNoteCategory(noteCategory: NoteCategoryEntity): Long
+    // All functions that related to note category.
+
+    suspend fun insertNoteCategory(noteCategory: NoteCategoryEntity)
 
     suspend fun updateNoteCategory(noteCategory: NoteCategoryEntity)
+
+    suspend fun deleteNoteCategory(noteCategory: NoteCategoryEntity)
 
     suspend fun incrementNoteCount(noteCategoryId: Long)
 
@@ -18,7 +22,9 @@ interface LocalDataSource {
 
     suspend fun fetchIfCategoryIdExists(id: Int): Boolean
 
-    suspend fun insertNote(note: NoteEntity): Long
+    // All functions that related to note.
+
+    suspend fun insertNote(note: NoteEntity)
 
     suspend fun updateNote(note: NoteEntity)
 
