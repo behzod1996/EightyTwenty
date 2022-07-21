@@ -8,7 +8,7 @@ import uz.behzoddev.data_caching.entities.notes.NoteEntity
 interface NoteDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertNote(note: NoteEntity): Long
+    suspend fun insertNote(note: NoteEntity)
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateNote(note: NoteEntity)
