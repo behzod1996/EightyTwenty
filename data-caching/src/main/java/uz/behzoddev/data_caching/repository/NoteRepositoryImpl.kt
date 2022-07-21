@@ -4,7 +4,7 @@ import com.example.core_data.DispatcherProvider
 import com.example.core_data.Resource
 import com.example.core_data.execute
 import com.example.domain.models.NoteDomainModel
-import com.example.domain.repository.NoteRepository
+import com.example.domain.repositories.NoteRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
@@ -18,7 +18,7 @@ class NoteRepositoryImpl @Inject constructor(
     private val dispatcher: DispatcherProvider
 ) : NoteRepository {
 
-    override suspend fun insertNote(note: NoteDomainModel): Long {
+    override suspend fun insertNote(note: NoteDomainModel) {
         return source.insertNote(noteMapper.toEntity(note))
     }
 

@@ -1,11 +1,11 @@
-package com.example.domain.repository
+package com.example.domain.repositories
 
 import com.example.core_data.Resource
 import com.example.domain.models.NoteDomainModel
 import kotlinx.coroutines.flow.Flow
 
 interface NoteRepository {
-    suspend fun insertNote(note: NoteDomainModel): Long
+    suspend fun insertNote(note: NoteDomainModel)
 
     suspend fun updateNote(note: NoteDomainModel)
 
